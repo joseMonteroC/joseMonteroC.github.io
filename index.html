@@ -151,11 +151,13 @@
         <div class="code-lines">
           <!-- PERSONALIZAR: Puedes cambiar el "código" decorativo -->
           <span class="code-line" style="--delay:0s;">def build_solution():</span>
-          <span class="code-line" style="--delay:0.5s;">  return innovation + expertise</span>
+          <span class="code-line" style="--delay:0.5s;">return innovation + expertise</span>
           <span class="code-line" style="--delay:1s;">SELECT * FROM projects</span>
           <span class="code-line" style="--delay:1.5s;">WHERE quality = 'high'</span>
           <span class="code-line" style="--delay:2s;">git commit -m "deploy"</span>
-          <span class="code-line" style="--delay:2.5s;">import creativity</span>
+          <span class="code-line" style="--delay:2.5s;">git add .</span>
+          <span class="code-line" style="--delay:3s;">import creativity</span>
+          <span class="code-line" style="--delay:3.5s;">git push</span>
         </div>
         <!-- Grid de puntos decorativo -->
         <div class="dot-grid"></div>
@@ -199,10 +201,9 @@
           <!-- Botón Descargar CV
             PERSONALIZAR: El archivo PDF debe estar en /assets/cv/CV_Jose_Montero.pdf
           -->
-          <a href="assets\docs\CV_Jose-Montero.pdf" download class="btn btn-secondary">
-            <i data-lucide="download"></i>
+          <button class="open-cv-modal btn btn-secondary">
             Descargar CV
-          </a>
+          </button>
         </div>
 
         <!-- Métricas / Estadísticas rápidas -->
@@ -214,7 +215,7 @@
           </div>
           <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat-item">
-            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-number" data-target="2">0</span>
             <span class="stat-label">Proyectos</span>
           </div>
           <div class="stat-divider" aria-hidden="true"></div>
@@ -369,7 +370,7 @@
                 <!-- PERSONALIZAR: Período de trabajo -->
                 <div class="timeline-date">
                   <i data-lucide="calendar"></i>
-                  <span>2025 — Presente</span>
+                  <span>01-2025 — 09-2025</span>
                 </div>
               </div>
 
@@ -718,163 +719,15 @@
             <div class="project-info">
               <div class="project-header">
                 <span class="project-number">02</span>
-                <h3 class="project-name">Smart Home Control</h3>
+                <h3 class="project-name">Web Transportes</h3>
               </div>
               <p class="project-description">
-                Aplicación móvil para controlar y automatizar las luces de una vivienda
-                mediante dispositivos inteligentes IoT, con interfaz intuitiva y
-                programación de rutinas automáticas.
+                Web dedicada al servicio de transporte particular. Ofreciendo un cotizador, sistema de contactos funcional
               </p>
               <div class="project-tags">
                 <span class="proj-tag">Mobile App</span>
                 <span class="proj-tag">IoT</span>
                 <span class="proj-tag">Automatización</span>
-              </div>
-            </div>
-          </article>
-
-          <!--
-            ================================================
-            PROYECTO 3: BOARDSWAP
-            CARPETA DE IMÁGENES: /assets/images/boardswap/
-            ================================================
-          -->
-          <article class="project-card reveal-up" style="--delay: 0.2s;" aria-label="Proyecto BoardSwap">
-            <div class="project-slider">
-              <div class="slider-track">
-                <img src="/assets/images/boardswap/boardswap-home.png"
-                  alt="BoardSwap - Vista principal"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/059669/ffffff?text=BoardSwap+Home'" />
-                <img src="/assets/images/boardswap/boardswap-listing.png"
-                  alt="BoardSwap - Publicaciones"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/047857/ffffff?text=BoardSwap+Listings'" />
-                <img src="/assets/images/boardswap/boardswap-trade.png"
-                  alt="BoardSwap - Intercambio"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/065F46/ffffff?text=BoardSwap+Trade'" />
-              </div>
-              <button class="slider-btn slider-prev" aria-label="Imagen anterior">
-                <i data-lucide="chevron-left"></i>
-              </button>
-              <button class="slider-btn slider-next" aria-label="Imagen siguiente">
-                <i data-lucide="chevron-right"></i>
-              </button>
-              <div class="slider-dots" aria-label="Indicadores de imagen"></div>
-            </div>
-            <div class="project-info">
-              <div class="project-header">
-                <span class="project-number">03</span>
-                <h3 class="project-name">BoardSwap</h3>
-              </div>
-              <p class="project-description">
-                Plataforma web para intercambio de juegos de mesa entre usuarios.
-                Permite gestionar publicaciones, propuestas de intercambio y
-                coordinación de entrega entre las partes.
-              </p>
-              <div class="project-tags">
-                <span class="proj-tag">Web App</span>
-                <span class="proj-tag">Gestión de usuarios</span>
-                <span class="proj-tag">Marketplace</span>
-              </div>
-            </div>
-          </article>
-
-          <!--
-            ================================================
-            PROYECTO 4: FINANCE DASHBOARD AI
-            CARPETA DE IMÁGENES: /assets/images/finance-ai/
-            ================================================
-          -->
-          <article class="project-card reveal-up" style="--delay: 0.3s;" aria-label="Proyecto Finance Dashboard AI">
-            <div class="project-slider">
-              <div class="slider-track">
-                <img src="/assets/images/finance-ai/finance-dashboard.png"
-                  alt="Finance AI - Dashboard principal"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/DC2626/ffffff?text=Finance+AI+Dashboard'" />
-                <img src="/assets/images/finance-ai/finance-analysis.png"
-                  alt="Finance AI - Análisis"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/B91C1C/ffffff?text=Finance+AI+Analysis'" />
-                <img src="/assets/images/finance-ai/finance-recommendations.png"
-                  alt="Finance AI - Recomendaciones"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/991B1B/ffffff?text=Finance+AI+Recs'" />
-              </div>
-              <button class="slider-btn slider-prev" aria-label="Imagen anterior">
-                <i data-lucide="chevron-left"></i>
-              </button>
-              <button class="slider-btn slider-next" aria-label="Imagen siguiente">
-                <i data-lucide="chevron-right"></i>
-              </button>
-              <div class="slider-dots" aria-label="Indicadores de imagen"></div>
-            </div>
-            <div class="project-info">
-              <div class="project-header">
-                <span class="project-number">04</span>
-                <h3 class="project-name">Finance Dashboard AI</h3>
-              </div>
-              <p class="project-description">
-                Dashboard financiero con inteligencia artificial para analizar inversiones,
-                detectar patrones en datos históricos y generar recomendaciones
-                personalizadas basadas en machine learning.
-              </p>
-              <div class="project-tags">
-                <span class="proj-tag">Python</span>
-                <span class="proj-tag">Machine Learning</span>
-                <span class="proj-tag">Data Analytics</span>
-                <span class="proj-tag">IA</span>
-              </div>
-            </div>
-          </article>
-
-          <!--
-            ================================================
-            PROYECTO 5: INVENTORY MANAGER CLOUD
-            CARPETA DE IMÁGENES: /assets/images/inventory/
-            ================================================
-          -->
-          <article class="project-card reveal-up" style="--delay: 0.4s;" aria-label="Proyecto Inventory Manager Cloud">
-            <div class="project-slider">
-              <div class="slider-track">
-                <img src="/assets/images/inventory/inventory-dashboard.png"
-                  alt="Inventory Manager - Dashboard"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/D97706/ffffff?text=Inventory+Dashboard'" />
-                <img src="/assets/images/inventory/inventory-products.png"
-                  alt="Inventory Manager - Productos"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/B45309/ffffff?text=Inventory+Products'" />
-                <img src="/assets/images/inventory/inventory-reports.png"
-                  alt="Inventory Manager - Reportes"
-                  loading="lazy"
-                  onerror="this.src='https://placehold.co/600x340/92400E/ffffff?text=Inventory+Reports'" />
-              </div>
-              <button class="slider-btn slider-prev" aria-label="Imagen anterior">
-                <i data-lucide="chevron-left"></i>
-              </button>
-              <button class="slider-btn slider-next" aria-label="Imagen siguiente">
-                <i data-lucide="chevron-right"></i>
-              </button>
-              <div class="slider-dots" aria-label="Indicadores de imagen"></div>
-            </div>
-            <div class="project-info">
-              <div class="project-header">
-                <span class="project-number">05</span>
-                <h3 class="project-name">Inventory Manager Cloud</h3>
-              </div>
-              <p class="project-description">
-                Sistema cloud para gestión de inventario en tiempo real orientado a
-                pequeñas y medianas empresas. Incluye control de stock, alertas
-                automáticas y reportes exportables.
-              </p>
-              <div class="project-tags">
-                <span class="proj-tag">Web</span>
-                <span class="proj-tag">SQL</span>
-                <span class="proj-tag">APIs</span>
-                <span class="proj-tag">Cloud</span>
               </div>
             </div>
           </article>
@@ -927,18 +780,54 @@
               El atributo "download" hace que se descargue automáticamente.
               PERSONALIZAR: Cambia el nombre del archivo en el atributo href y download.
             -->
-            <a href="/assets/cv/CV_Jose_Montero.pdf"
-               download="CV_Jose_Montero.pdf"
-               class="btn btn-white"
-               aria-label="Descargar CV de José Luis Montero en formato PDF">
-              <i data-lucide="download"></i>
+            <button class="open-cv-modal btn btn-secondary">
               Descargar CV
-            </a>
+            </button>
           </div>
         </div>
       </div>
     </section>
+    <!-- ========================================
+          MODAL DE DESCARGA DE CV
+      ======================================== -->
+      <div class="cv-modal-overlay" id="cvModal">
 
+        <div class="cv-modal">
+
+          <div class="cv-modal-icon">
+            <i data-lucide="file-text"></i>
+          </div>
+
+          <h3 class="cv-modal-title">
+            Descargar Currículum
+          </h3>
+
+          <p class="cv-modal-description">
+            ¿Deseas descargar mi CV en formato PDF?
+            <br>
+            El archivo se descargará inmediatamente.
+          </p>
+
+          <div class="cv-modal-actions">
+
+            <button class="cv-btn-cancel" id="closeCvModal">
+              Cancelar
+            </button>
+
+            <a
+              href="assets/docs/CV_Jose-Montero.pdf"
+              download
+              class="cv-btn-download"
+            >
+              <i data-lucide="download"></i>
+              Descargar
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
     <!-- ==================================================
       SECCIÓN 7: CONTACTO
       Formulario + información de contacto.

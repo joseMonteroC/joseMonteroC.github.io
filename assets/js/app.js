@@ -72,6 +72,38 @@ function initLoader() {
   });
 }
 
+       /* =============================================
+                  MODAL DE DESCARGA DE CV
+       ================================================ */
+       
+    const cvModal = document.getElementById("cvModal");
+    const closeCvModal = document.getElementById("closeCvModal");
+
+    const openCvButtons = document.querySelectorAll(".open-cv-modal");
+
+    openCvButtons.forEach(button => {
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            cvModal.classList.add("active");
+        });
+    });
+
+    closeCvModal.addEventListener("click", () => {
+        cvModal.classList.remove("active");
+    });
+
+    cvModal.addEventListener("click", (e) => {
+        if (e.target === cvModal) {
+            cvModal.classList.remove("active");
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            cvModal.classList.remove("active");
+        }
+    });
+
 /* ============================================================
   03. TEMA OSCURO / CLARO
   Permite al usuario alternar entre modo claro y oscuro.
@@ -219,6 +251,77 @@ function initNavbar() {
     if (mobileMenu) mobileMenu.style.display = 'none';
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const lines = document.querySelectorAll(".code-line");
+
+    const positions = [];
+
+    lines.forEach((_, i) => {
+
+        // Distribución vertical uniforme
+        const top = ((i + 1) / (lines.length + 1)) * 100;
+
+        let left;
+
+        // Columna izquierda
+        if (i % 2 === 0) {
+            left = 5 + Math.random() * 10; // 5% - 15%
+        }
+        // Columna derecha
+        else {
+            left = 75 + Math.random() * 10; // 85% - 95%
+        }
+
+        positions.push({
+            top,
+            left,
+            side: i % 2 === 0 ? "left" : "right"
+        });
+    });
+
+    // Posiciones iniciales
+    lines.forEach((line, i) => {
+        line.style.top = positions[i].top + "%";
+        line.style.left = positions[i].left + "%";
+    });
+
+    // Intercambiar solo dentro de la misma columna
+    setInterval(() => {
+
+        const side = Math.random() < 0.5 ? "left" : "right";
+
+        const indexes = positions
+            .map((pos, index) => ({ pos, index }))
+            .filter(item => item.pos.side === side)
+            .map(item => item.index);
+
+        if (indexes.length < 2) return;
+
+        const a = indexes[Math.floor(Math.random() * indexes.length)];
+
+        let b;
+        do {
+            b = indexes[Math.floor(Math.random() * indexes.length)];
+        } while (a === b);
+
+        // Intercambiar posiciones
+        [positions[a], positions[b]] = [positions[b], positions[a]];
+
+        // Mantener la propiedad side correcta
+        positions[a].side = side;
+        positions[b].side = side;
+
+        // Aplicar movimiento suave
+        lines.forEach((line, i) => {
+            line.style.top = positions[i].top + "%";
+            line.style.left = positions[i].left + "%";
+        });
+
+    }, 5000);
+
+});
 
 /* ============================================================
   05. TYPING EFFECT
