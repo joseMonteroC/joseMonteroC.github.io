@@ -4,14 +4,6 @@
   PORTAFOLIO PROFESIONAL - JOSÉ LUIS MONTERO
   ============================================================
   Archivo: index.html
-  Descripción: Estructura principal del portafolio.
-  
-  CÓMO PERSONALIZAR:
-  - Busca los comentarios "PERSONALIZAR:" para encontrar
-    rápidamente los textos a cambiar.
-  - Cada sección tiene su bloque de comentarios.
-  - Los archivos CSS y JS están enlazados al final del head
-    y antes del cierre del body respectivamente.
   ============================================================
 -->
 <html lang="es">
@@ -19,8 +11,6 @@
 <head>
   <!-- =====================================================
     META TAGS - SEO y configuración básica
-    PERSONALIZAR: Cambia el título, descripción y autor
-    según tus datos reales.
   ====================================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,21 +19,14 @@
   <meta name="keywords" content="desarrollador software, Python, VB.NET, JavaScript, SQL, portafolio, Chile" />
   <meta name="author" content="José Luis Montero Contreras" />
 
-  <!-- Open Graph - Para compartir en redes sociales -->
+  
   <meta property="og:title" content="José Luis Montero | Desarrollador de Software" />
   <meta property="og:description" content="Portafolio profesional — Soluciones tecnológicas eficientes." />
   <meta property="og:type" content="website" />
 
-  <!-- PERSONALIZAR: Cambia el título de la pestaña del navegador -->
+  
   <title>José Luis Montero | Desarrollador de Software</title>
 
-  <!-- =====================================================
-    FUENTES DE GOOGLE
-    - Syne: Display (títulos grandes, carácter geométrico)
-    - Inter: Body (cuerpo de texto, muy legible)
-    Si quieres cambiar fuentes, reemplaza los nombres aquí
-    y en la variable --font-display / --font-body en styles.css
-  ====================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -51,24 +34,17 @@
     rel="stylesheet" />
 
   <!-- =====================================================
-    ICONOS - Lucide Icons (librería de iconos SVG modernos)
-    Documentación: https://lucide.dev/icons/
+    ICONOS - Lucide Icons 
   ====================================================== -->
   <link rel="icon" type="image/png" href="assets\img\icon2minimo.png" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-  <!-- Enlace al archivo de estilos principal -->
+  
   <link rel="stylesheet" href="assets\css\style.css" />
 </head>
 
 <body class="light-mode">
 
-  <!-- =====================================================
-    LOADER INICIAL
-    Se muestra mientras la página carga.
-    El script.js lo oculta cuando todo está listo.
-    PERSONALIZAR: Cambia las iniciales "JM" por las tuyas.
-  ====================================================== -->
   <div id="loader" aria-hidden="true">
     <div class="loader-inner">
         <span class="loader-initials">JM</span>
@@ -76,24 +52,19 @@
     </div>
   </div>
 
-  <!-- =====================================================
-    NAVBAR - Barra de navegación fija
-    Se vuelve más opaca al hacer scroll (lógica en script.js).
-    PERSONALIZAR: Cambia las iniciales del logo y los links.
-  ====================================================== -->
   <header id="navbar" role="banner">
     <nav class="nav-container" aria-label="Navegación principal">
 
-      <!-- Logo / Iniciales -->
+      
       <a href="#hero" class="nav-logo" aria-label="Inicio">
         <span class="logo-bracket">&lt;</span>
-        JM <!-- PERSONALIZAR: Cambia a tus iniciales -->
+        JM 
         <span class="logo-bracket">/&gt;</span>
       </a>
 
-      <!-- Links de navegación desktop -->
+      
       <ul class="nav-links" role="list">
-        <!-- Cada <li> es un ítem del menú. Agrega/quita según tus secciones. -->
+        
         <li><a href="#about" class="nav-link">Sobre mí</a></li>
         <li><a href="#experience" class="nav-link">Experiencia</a></li>
         <li><a href="#skills" class="nav-link">Habilidades</a></li>
@@ -101,16 +72,16 @@
         <li><a href="#contact" class="nav-link">Contacto</a></li>
       </ul>
 
-      <!-- Controles del navbar: dark mode + menú hamburguesa -->
+      
       <div class="nav-controls">
-        <!-- Botón de cambio de tema claro/oscuro -->
+        
         <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
-          <!-- Los iconos se intercambian con JavaScript -->
+          
           <i data-lucide="sun" class="icon-sun"></i>
           <i data-lucide="moon" class="icon-moon"></i>
         </button>
 
-        <!-- Botón hamburguesa para móvil -->
+        
         <button id="menu-toggle" class="hamburger" aria-label="Abrir menú" aria-expanded="false">
           <span></span>
           <span></span>
@@ -119,7 +90,7 @@
       </div>
     </nav>
 
-    <!-- Menú móvil (se muestra al hacer click en hamburguesa) -->
+    
     <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Menú de navegación móvil">
       <ul role="list">
         <li><a href="#about" class="mobile-link">Sobre mí</a></li>
@@ -138,18 +109,16 @@
 
     <!-- ==================================================
       SECCIÓN 1: HERO
-      Pantalla de entrada impactante.
-      PERSONALIZAR: Nombre, título, descripción.
     =================================================== -->
     <section id="hero" class="hero-section" aria-label="Presentación">
 
-      <!-- Fondo animado con formas geométricas y "código flotante" -->
+      
       <div class="hero-bg" aria-hidden="true">
-        <!-- Orbes de color de fondo -->
+        
 
-        <!-- Líneas de código decorativas flotantes -->
+        
         <div class="code-lines">
-          <!-- PERSONALIZAR: Puedes cambiar el "código" decorativo -->
+          
           <span class="code-line" style="--delay:0s;">def build_solution():</span>
           <span class="code-line" style="--delay:0.5s;">return innovation + expertise</span>
           <span class="code-line" style="--delay:1s;">SELECT * FROM projects</span>
@@ -159,56 +128,52 @@
           <span class="code-line" style="--delay:3s;">import creativity</span>
           <span class="code-line" style="--delay:3.5s;">git push</span>
         </div>
-        <!-- Grid de puntos decorativo -->
+        
         <div class="dot-grid"></div>
       </div>
 
-      <!-- Contenido principal del hero -->
+      
       <div class="hero-content">
 
-        <!-- Badge de disponibilidad -->
+        
         <div class="hero-badge reveal-up">
           <span class="badge-dot"></span>
-          <!-- PERSONALIZAR: Cambia este mensaje según tu disponibilidad -->
+          
           Disponible para nuevos proyectos
         </div>
 
-        <!-- PERSONALIZAR: Tu nombre completo -->
+        
         <h1 class="hero-name reveal-up" style="--delay: 0.1s;">
           José Luis<br />
           <span class="name-accent">Montero</span>
         </h1>
 
-        <!-- Título con efecto de escritura (typing effect) -->
-        <!-- PERSONALIZAR: Los textos del array en script.js -->
+        
         <p class="hero-title reveal-up" style="--delay: 0.2s;">
           <span id="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
         </p>
 
-        <!-- PERSONALIZAR: Tu descripción profesional -->
+        
         <p class="hero-description reveal-up" style="--delay: 0.3s;">
           Desarrollador orientado a la creación de soluciones tecnológicas eficientes,
           automatización de procesos y desarrollo de aplicaciones modernas.
         </p>
 
-        <!-- Botones de acción principal -->
+        
         <div class="hero-actions reveal-up" style="--delay: 0.4s;">
-          <!-- Botón Ver Proyectos -->
+          
           <a href="#projects" class="btn btn-primary">
             <i data-lucide="code-2"></i>
             Ver Proyectos
           </a>
-          <!-- Botón Descargar CV
-            PERSONALIZAR: El archivo PDF debe estar en /assets/cv/CV_Jose_Montero.pdf
-          -->
           <button class="open-cv-modal btn btn-secondary">
             Descargar CV
           </button>
         </div>
 
-        <!-- Métricas / Estadísticas rápidas -->
+        
         <div class="hero-stats reveal-up" style="--delay: 0.5s;">
-          <!-- PERSONALIZAR: Cambia los números y textos -->
+          
           <div class="stat-item">
             <span class="stat-number" data-target="1">0</span>
             <span class="stat-label">Año de experiencia</span>
@@ -226,7 +191,7 @@
         </div>
       </div>
 
-      <!-- Indicador de scroll hacia abajo -->
+      
       <a href="#about" class="scroll-indicator" aria-label="Ir a la sección Sobre mí">
         <span class="scroll-text">Scroll</span>
         <i data-lucide="chevron-down"></i>
@@ -235,26 +200,18 @@
 
     <!-- ==================================================
       SECCIÓN 2: SOBRE MÍ
-      Descripción personal y foto de perfil.
-      PERSONALIZAR: Texto, foto, habilidades blandas.
     =================================================== -->
     <section id="about" class="about-section section" aria-labelledby="about-title">
       <div class="container">
 
-        <!-- Etiqueta de sección -->
+        
         <div class="section-eyebrow reveal-up">Sobre mí</div>
 
         <div class="about-grid">
 
-          <!-- Columna izquierda: Foto de perfil -->
+          
           <div class="about-photo-col reveal-left">
             <div class="photo-wrapper">
-              <!--
-                REEMPLAZAR ESTA IMAGEN POR FOTO PERSONAL
-                Coloca tu foto en: /assets/images/profile/profile.jpg
-                Dimensiones recomendadas: 400x500px o 1:1.25 de proporción
-                Formatos soportados: .jpg, .png, .webp
-              -->
               <img
                 src="assets\img\yo.jpeg"
                 alt="José Luis Montero Contreras — Desarrollador de Software"
@@ -262,7 +219,7 @@
                 loading="lazy"
                 onerror="this.src='https://ui-avatars.com/api/?name=Jose+Luis+Montero&background=5B9BF8&color=fff&size=400&font-size=0.33'"
               />
-              <!-- Decoración: badge de tecnología principal -->
+              
               <div class="photo-badge">
                 <i data-lucide="code-2"></i>
                 <span>Dev</span>
@@ -270,13 +227,13 @@
             </div>
           </div>
 
-          <!-- Columna derecha: Información personal -->
+          
           <div class="about-info-col reveal-right">
 
             <h2 id="about-title" class="section-title">
               Hola, soy <span class="text-accent">José Luis</span>           
             </h2>
-            <!-- PERSONALIZAR: Tu descripción de "Sobre mí" -->
+            
             <p class="about-text">
               Egresado de Analista Programador con experiencia en el ciclo completo de desarrollo de software:
               desde el diseño e implementación hasta las pruebas y el mantenimiento.
@@ -287,9 +244,9 @@
               mantención preventiva y soporte técnico — lo que me da una visión completa del ecosistema tecnológico.
             </p>
 
-            <!-- Información de contacto rápida -->
+            
             <ul class="about-details" role="list">
-              <!-- PERSONALIZAR: Tu ubicación y correo -->
+              
               <li>
                 <i data-lucide="map-pin"></i>
                 <span>Santiago, Chile</span>
@@ -304,11 +261,11 @@
               </li>
             </ul>
 
-            <!-- Habilidades blandas -->
+            
             <div class="soft-skills">
               <h3 class="soft-skills-title">Habilidades blandas</h3>
               <div class="soft-skills-grid">
-                <!-- PERSONALIZAR: Agrega o quita etiquetas según tus habilidades blandas -->
+                
                 <span class="skill-tag"><i data-lucide="user-check"></i> Autogestión</span>
                 <span class="skill-tag"><i data-lucide="users"></i> Trabajo en equipo</span>
                 <span class="skill-tag"><i data-lucide="lightbulb"></i> Resolución de problemas</span>
@@ -324,8 +281,6 @@
 
     <!-- ==================================================
       SECCIÓN 3: EXPERIENCIA LABORAL
-      Timeline de experiencia profesional.
-      PERSONALIZAR: Empresas, fechas, funciones.
     =================================================== -->
     <section id="experience" class="experience-section section" aria-labelledby="experience-title">
       <div class="container">
@@ -338,14 +293,8 @@
           Mi camino profesional y las tecnologías que he aplicado en entornos reales.
         </p>
 
-        <!-- Timeline de experiencia -->
+        
         <div class="timeline" role="list">
-
-          <!--
-            CÓMO AGREGAR UNA NUEVA EXPERIENCIA:
-            Copia este bloque completo (.timeline-item) y pégalo debajo.
-            Cambia los datos: empresa, cargo, fecha, funciones, tags.
-          -->
           <article class="timeline-item reveal-up" role="listitem">
             <div class="timeline-marker" aria-hidden="true">
               <div class="marker-dot"></div>
@@ -353,30 +302,30 @@
             </div>
 
             <div class="timeline-card">
-              <!-- Header de la tarjeta -->
+              
               <div class="timeline-header">
                 <div class="timeline-company-info">
-                  <!-- Icono de la empresa -->
+                  
                   <div class="company-icon">
                     <i data-lucide="building-2"></i>
                   </div>
                   <div>
-                    <!-- PERSONALIZAR: Nombre de la empresa -->
+                    
                     <h3 class="company-name">CREASYS</h3>
-                    <!-- PERSONALIZAR: Tu cargo -->
+                    
                     <p class="job-title">Desarrollador de Software</p>
                   </div>
                 </div>
-                <!-- PERSONALIZAR: Período de trabajo -->
+                
                 <div class="timeline-date">
                   <i data-lucide="calendar"></i>
                   <span>01-2025 — 09-2025</span>
                 </div>
               </div>
 
-              <!-- Lista de funciones / responsabilidades -->
+              
               <ul class="timeline-duties" role="list">
-                <!-- PERSONALIZAR: Agrega o quita ítems según tus responsabilidades reales -->
+                
                 <li><i data-lucide="chevron-right"></i> Desarrollo de aplicaciones en Python</li>
                 <li><i data-lucide="chevron-right"></i> Desarrollo y mantenimiento en VB.NET</li>
                 <li><i data-lucide="chevron-right"></i> Consultas SQL y optimización de bases de datos</li>
@@ -386,9 +335,9 @@
                 <li><i data-lucide="chevron-right"></i> Elaboración de documentación técnica</li>
               </ul>
 
-              <!-- Tags de tecnologías utilizadas -->
+              
               <div class="timeline-tags">
-                <!-- PERSONALIZAR: Agrega las tecnologías que usaste -->
+                
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">VB.NET</span>
                 <span class="tech-tag">SQL</span>
@@ -397,21 +346,12 @@
               </div>
             </div>
           </article>
-
-          <!--
-            AQUÍ PUEDES AGREGAR MÁS EXPERIENCIAS
-            Copia el bloque <article class="timeline-item"> de arriba
-            y pégalo aquí con tus datos.
-          -->
-
         </div>
       </div>
     </section>
 
     <!-- ==================================================
       SECCIÓN 4: HABILIDADES TÉCNICAS
-      Tarjetas con barras de progreso animadas.
-      PERSONALIZAR: Tecnologías, porcentajes, iconos.
     =================================================== -->
     <section id="skills" class="skills-section section" aria-labelledby="skills-title">
       <div class="container">
@@ -426,20 +366,13 @@
 
         <div class="skills-wrapper">
 
-          <!-- Columna: Lenguajes de programación -->
+          
           <div class="skills-group reveal-left">
             <h3 class="skills-group-title">
               <i data-lucide="code"></i>
               Lenguajes
             </h3>
 
-            <!--
-              CÓMO AGREGAR UNA HABILIDAD:
-              Copia el bloque .skill-bar y cambia:
-              - data-level: porcentaje de dominio (0-100)
-              - El nombre del lenguaje en .skill-name
-              - El porcentaje visible en .skill-percent
-            -->
             <div class="skill-bar" data-level="60">
               <div class="skill-header">
                 <span class="skill-name">
@@ -493,7 +426,7 @@
             </div>
           </div>
 
-          <!-- Columna: Herramientas y tecnologías -->
+          
           <div class="skills-group reveal-right">
             <h3 class="skills-group-title">
               <i data-lucide="wrench"></i>
@@ -555,12 +488,9 @@
 
         </div>
 
-        <!-- Tarjetas adicionales de áreas de conocimiento -->
+        
         <div class="knowledge-cards reveal-up">
-          <!--
-            CÓMO AGREGAR UNA TARJETA DE CONOCIMIENTO:
-            Copia un bloque .knowledge-card y cambia ícono, título y descripción.
-          -->
+
           <div class="knowledge-card">
             <div class="knowledge-icon">
               <i data-lucide="terminal"></i>
@@ -596,8 +526,6 @@
 
     <!-- ==================================================
       SECCIÓN 5: PROYECTOS
-      Tarjetas con galería de imágenes y slider.
-      PERSONALIZAR: Nombres, descripciones, tecnologías.
     =================================================== -->
     <section id="projects" class="projects-section section" aria-labelledby="projects-title">
       <div class="container">
@@ -610,17 +538,12 @@
           Soluciones reales construidas con tecnología y propósito.
         </p>
 
-        <!-- Grid de tarjetas de proyectos -->
+        
         <div class="projects-grid">
 
           <!--
             ================================================
             PROYECTO 1: PARSER
-            CARPETA DE IMÁGENES: /assets/images/parser/
-            Imágenes sugeridas:
-              - parser-dashboard.png (vista del dashboard)
-              - parser-upload.png (pantalla de carga)
-              - parser-results.png (resultados del procesamiento)
             ================================================
           -->
             <div id="image-modal" class="image-modal" aria-hidden="true">
@@ -628,13 +551,9 @@
               <img class="modal-content" id="modal-img" alt="Imagen ampliada">
             </div>
           <article class="project-card reveal-up" style="--delay: 0s;" aria-label="Proyecto PARSER">
-            <!-- Slider de imágenes del proyecto -->
+            
             <div class="project-slider">
               <div class="slider-track">
-                <!--
-                  PERSONALIZAR: Cambia los src por las rutas a tus imágenes reales.
-                  Si no tienes imágenes, el onerror muestra un placeholder.
-                -->
                 <img src="assets\img\parser\parser-dashboard.png"
                   alt="PARSER - Vista del dashboard"
                   loading="lazy"
@@ -648,31 +567,31 @@
                   loading="lazy"
                   onerror="this.src='https://placehold.co/600x340/0F4C9E/ffffff?text=PARSER+Results'" />
               </div>
-              <!-- Controles del slider -->
+              
               <button class="slider-btn slider-prev" aria-label="Imagen anterior">
                 <i data-lucide="chevron-left"></i>
               </button>
               <button class="slider-btn slider-next" aria-label="Imagen siguiente">
                 <i data-lucide="chevron-right"></i>
               </button>
-              <!-- Indicadores de puntos del slider -->
+              
               <div class="slider-dots" aria-label="Indicadores de imagen"></div>
             </div>
 
-            <!-- Contenido de la tarjeta -->
+            
             <div class="project-info">
               <div class="project-header">
                 <span class="project-number">01</span>
-                <!-- PERSONALIZAR: Nombre del proyecto -->
+                
                 <h3 class="project-name">PARSER</h3>
               </div>
-              <!-- PERSONALIZAR: Descripción del proyecto -->
+              
               <p class="project-description">
                 Aplicación en Python que automatiza la extracción de información desde
                 cartolas de inversiones en PDF, transformándolas automáticamente a Excel
                 para facilitar el análisis y procesamiento de datos financieros.
               </p>
-              <!-- PERSONALIZAR: Tags de tecnologías -->
+              
               <div class="project-tags">
                 <span class="proj-tag">Python</span>
                 <span class="proj-tag">PDF Parsing</span>
@@ -684,12 +603,7 @@
 
           <!--
             ================================================
-            PROYECTO 2: SMART HOME CONTROL
-            CARPETA DE IMÁGENES: /assets/images/smarthome/
-            Imágenes sugeridas:
-              - app-home.png
-              - app-lights.png
-              - app-settings.png
+            PROYECTO 2: WEB TRANSPORTES
             ================================================
           -->
           <article class="project-card reveal-up" style="--delay: 0.1s;" aria-label="Proyecto Smart Home Control">
@@ -728,33 +642,17 @@
             </div>
           </article>
 
-          <!--
-            ================================================
-            CÓMO AGREGAR UN NUEVO PROYECTO:
-            Copia cualquier bloque <article class="project-card">
-            y pégalo aquí. Cambia:
-            - El atributo aria-label
-            - Las rutas de imágenes y sus atributos alt
-            - La carpeta de imágenes (comentario)
-            - El número (.project-number)
-            - El nombre (.project-name)
-            - La descripción (.project-description)
-            - Los tags (.proj-tag)
-            ================================================
-          -->
-
         </div>
       </div>
     </section>
 
     <!-- ==================================================
-      SECCIÓN 6: CURRÍCULUM DESCARGABLE
-      Bloque destacado para descargar el CV.
+      SECCIÓN 6: CURRÍCULUM
     =================================================== -->
     <section id="resume" class="resume-section section" aria-labelledby="resume-title">
       <div class="container">
         <div class="resume-card reveal-up">
-          <!-- Decoración de fondo -->
+          
           <div class="resume-bg-decor" aria-hidden="true">
             <i data-lucide="file-text"></i>
           </div>
@@ -770,12 +668,6 @@
                 formación y habilidades técnicas.
               </p>
             </div>
-
-            <!--
-              UBICAR EL PDF EN: /assets/cv/CV_Jose_Montero.pdf
-              El atributo "download" hace que se descargue automáticamente.
-              PERSONALIZAR: Cambia el nombre del archivo en el atributo href y download.
-            -->
             <button class="open-cv-modal btn btn-secondary">
               Descargar CV
             </button>
@@ -826,8 +718,6 @@
       </div>
     <!-- ==================================================
       SECCIÓN 7: CONTACTO
-      Formulario + información de contacto.
-      PERSONALIZAR: Datos de contacto, redes.
     =================================================== -->
     <section id="contact" class="contact-section section" aria-labelledby="contact-title">
       <div class="container">
@@ -842,12 +732,12 @@
 
         <div class="contact-grid">
 
-          <!-- Columna izquierda: Información de contacto -->
+          
           <div class="contact-info reveal-left">
 
             <h3 class="contact-info-title">Información de contacto</h3>
 
-            <!-- PERSONALIZAR: Cambia tus datos de contacto -->
+            
             <ul class="contact-details" role="list">
               <li class="contact-detail-item">
                 <div class="contact-icon">
@@ -867,7 +757,7 @@
                 </div>
                 <div>
                   <span class="detail-label">Teléfono</span>
-                  <!-- PERSONALIZAR: Tu número de teléfono -->
+                  
                   <a href="tel:+56985595943" class="detail-value">+56 9 8559 5943</a>
                 </div>
               </li>
@@ -883,25 +773,21 @@
               </li>
             </ul>
 
-            <!-- Links a redes sociales -->
+            
             <div class="social-links">
               <h4 class="social-title">Redes profesionales</h4>
               <div class="social-icons">
-                <!--
-                  PERSONALIZAR: Reemplaza los href="#" por tus URLs reales.
-                  LinkedIn: https://linkedin.com/in/tu-perfil
-                  GitHub:   https://github.com/tu-usuario
-                -->
-                <a href="#" class="social-link" aria-label="LinkedIn de José Luis Montero" target="_blank" rel="noopener noreferrer">
-                  <!-- Ícono LinkedIn SVG inline -->
+
+                <a href="https://www.linkedin.com/in/jose-luis-montero-contreras-546a60418/" class="social-link" aria-label="LinkedIn de José Luis Montero" target="_blank" rel="noopener noreferrer">
+                  
                   <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
                     <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
                     <circle cx="4" cy="4" r="2"/>
                   </svg>
                 </a>
 
-                <a href="#" class="social-link" aria-label="GitHub de José Luis Montero" target="_blank" rel="noopener noreferrer">
-                  <!-- Ícono GitHub SVG inline -->
+                <a href="https://github.com/joseMonteroC" class="social-link" aria-label="GitHub de José Luis Montero" target="_blank" rel="noopener noreferrer">
+                  
                   <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
                   </svg>
@@ -914,21 +800,12 @@
             </div>
           </div>
 
-          <!-- Columna derecha: Formulario de contacto -->
+          
           <div class="contact-form-col reveal-right">
-            <!--
-              FORMULARIO DE CONTACTO
-              Para hacerlo funcional, necesitas un backend o un servicio como:
-              - Formspree: https://formspree.io
-              - EmailJS: https://emailjs.com
-              - Netlify Forms (si despliegas en Netlify)
-              
-              Para Formspree, cambia el action por: action="https://formspree.io/f/TU_ID"
-              y agrega method="POST"
-            -->
-            <form id="contact-form" class="contact-form" novalidate aria-label="Formulario de contacto">
 
-              <!-- Campo: Nombre -->
+            <form id="contact-form" class="contact-form" novalidate aria-label="Formulario de contacto" data-formspree="https://formspree.io/f/xbdebnlq" method="POST">
+
+              
               <div class="form-group">
                 <label for="name" class="form-label">Nombre completo</label>
                 <div class="input-wrapper">
@@ -944,11 +821,11 @@
                     autocomplete="name"
                   />
                 </div>
-                <!-- Mensaje de error (se muestra con JavaScript) -->
+                
                 <span class="form-error" role="alert" aria-live="polite"></span>
               </div>
 
-              <!-- Campo: Correo -->
+              
               <div class="form-group">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <div class="input-wrapper">
@@ -966,7 +843,7 @@
                 <span class="form-error" role="alert" aria-live="polite"></span>
               </div>
 
-              <!-- Campo: Asunto -->
+              
               <div class="form-group">
                 <label for="subject" class="form-label">Asunto</label>
                 <div class="input-wrapper">
@@ -983,7 +860,7 @@
                 <span class="form-error" role="alert" aria-live="polite"></span>
               </div>
 
-              <!-- Campo: Mensaje -->
+              
               <div class="form-group">
                 <label for="message" class="form-label">Mensaje</label>
                 <textarea
@@ -998,13 +875,13 @@
                 <span class="form-error" role="alert" aria-live="polite"></span>
               </div>
 
-              <!-- Botón de envío -->
+              
               <button type="submit" class="btn btn-primary btn-full">
                 <i data-lucide="send"></i>
                 <span>Enviar mensaje</span>
               </button>
 
-              <!-- Mensaje de éxito/error tras el envío -->
+              
               <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
 
             </form>
@@ -1018,51 +895,34 @@
 
   <!-- =====================================================
     FOOTER
-    PERSONALIZAR: Cambia los links de redes sociales.
-    El año se actualiza automáticamente con JavaScript.
   ====================================================== -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
 
-        <!-- Columna 1: Info del desarrollador -->
+        
         <div class="footer-brand">
           <span class="footer-logo">
             <span class="logo-bracket">&lt;</span>JM<span class="logo-bracket">/&gt;</span>
           </span>
-          <!-- PERSONALIZAR: Tu descripción corta -->
+          
           <p class="footer-tagline">
             Desarrollador de Software.<br />Construyendo soluciones que importan.
           </p>
         </div>
 
-        <!-- Columna 2: Links rápidos -->
-        <div class="footer-links">
-          <h4 class="footer-col-title">Navegación</h4>
-          <ul role="list">
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
-
-        <!-- Columna 3: Redes sociales -->
+        
         <div class="footer-social">
           <h4 class="footer-col-title">Conectar</h4>
           <div class="footer-social-icons">
-            <!--
-              PERSONALIZAR: Reemplaza href="#" por tus URLs reales.
-            -->
-            <a href="#" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/jose-luis-montero-contreras-546a60418/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
                 <circle cx="4" cy="4" r="2"/>
               </svg>
               LinkedIn
             </a>
-            <a href="#" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/joseMonteroC" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
               </svg>
@@ -1077,10 +937,10 @@
 
       </div>
 
-      <!-- Línea inferior del footer -->
+      
       <div class="footer-bottom">
         <p>
-          <!-- El año se actualiza automáticamente con JavaScript (script.js) -->
+          
           &copy; <span id="footer-year"></span> José Luis Montero Contreras.
           Todos los derechos reservados.
         </p>
@@ -1093,8 +953,6 @@
 
   <!-- =====================================================
     BOTÓN "VOLVER ARRIBA"
-    Aparece cuando el usuario ha bajado suficiente en la página.
-    La lógica está en script.js.
   ====================================================== -->
   <button id="back-to-top" class="back-to-top" aria-label="Volver al inicio">
     <i data-lucide="arrow-up"></i>
@@ -1102,14 +960,8 @@
 
   <!-- =====================================================
     SCRIPTS
-    El script de Lucide Icons debe inicializarse después
-    de que el DOM esté listo.
-    El script.js principal va al final del body para mayor
-    rendimiento (no bloquea la renderización).
   ====================================================== -->
   <script>
-    // Inicializa los iconos de Lucide en el DOM
-    // Esto reemplaza los elementos <i data-lucide="..."> por SVGs reales
     lucide.createIcons();
   </script>
   <script src="assets\js\app.js"></script>
